@@ -4,7 +4,11 @@
 
 ?>
 <!DOCTYPE HTML>
+<head>
+    <link rel="stylesheet" href="style.css"/>
+</head>
 <body>
+    <script type="module" src="/main.js"></script>
     <form action="quizhandler.php" method="post">
         <h6>Hwat color is a duck?</h6>
         <input type="color" name="duck_color"/>
