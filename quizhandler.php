@@ -29,8 +29,4 @@ if ($_POST["smash_game"] == "y") {
     echo $endings[1];
 }
 
-function check_question(index) {
-
-}
-
 ?>

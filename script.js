@@ -1,9 +1,9 @@
 let form = $("form");
 let buttons = $(".dot");
-let count = 1;
+let count = 0;
 let children = form.children("div");
-children.eq(1).css("display","block");
-buttons.eq(1).toggleClass("triggered");
+children.eq(0).css("display","block");
+buttons.eq(0).toggleClass("triggered");
 $("#next").on("click", ()  => {
     count++;
     children.eq(count-1).css("display","none");
