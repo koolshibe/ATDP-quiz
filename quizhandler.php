@@ -1,6 +1,6 @@
 <?php
 
-include_once "header.html";
+include_once 'header.html';
 
 $personalities = ["pacifist", "fun guy", "normal", "extreme", "violent", "true ending"];
 $endings = ["liberator", "gamer", "colorblind"];
