@@ -1,8 +1,20 @@
 let form = $("form");
+let buttons = $(".dot");
 let count = 1;
-form.children("div").eq(1).css("display","block");
-form.children("div").children("div").on("click", ()  => {
+let children = form.children("div");
+children.eq(1).css("display","block");
+buttons.eq(1).toggleClass("triggered");
+$("#next").on("click", ()  => {
     count++;
-    form.children("div").eq(count-1).css("display","none");
-    form.children("div").eq(count).css("display","block");
+    children.eq(count-1).css("display","none");
+    children.eq(count).css("display","block");
+    buttons.eq(count).toggleClass("triggered");
+    buttons.eq(count-1).toggleClass("triggered");
+});
+$("#back").on("click", ()  => {
+    count--;
+    children.eq(count+1).css("display","none");
+    children.eq(count).css("display","block");
+    buttons.eq(count).toggleClass("triggered");
+    buttons.eq(count+1).toggleClass("triggered");
 });

@@ -5,3 +5,22 @@ form {
     display:inline-block;
     transition: left 1s, right 1s;
 }
+.dot {
+    border-radius:10px;
+    width:20px;
+    height:20px;
+    color:gray;
+    margin-left:12px;
+    margin-right:12px;
+}
+.triggered {
+    border-radius:20px;
+    width:30px;
+    height:30px;
+    color:palevioletred;
+    margin-left:7px;
+    margin-right:7px;
+}
+#progress {
+    display:inline-block;
+}
